@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Dunces & Daggers - Settings</title>
+	<link rel="icon" href="dnd-meme-icon.jpg">
+	<meta charset="UTF-8">
+	<style>		
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		h2 {
+			color: orange;
+		}
+		
+		h3 {
+			color: black;
+		}
+		
+		.profile-pic {
+			
+		}
+	
+		h1,
+		header {
+			background-color: orange;
+			color: white;
+		}		
+
+		.main-container {
+			max-width: 100%;
+			margin: auto;
+		}
+		
+		.post-feed li {
+			border: 2px solid black;
+		}
+		
+		.post-feed {
+			list-style: none;
+			
+		}
+		
+		.site-menu,
+		.sidebar {
+			width: 20%;
+		}
+		
+		.main-content {
+			width: 80%;
+			float: right;
+		}
+		
+		nav ul {
+			height: auto;
+			width: 160px;
+			position: fixed;
+			background-color: #555;
+			list-style: none;
+			border: 1px solid #000;
+			padding: 0;
+		}
+		
+		nav ul li {
+			border-bottom: 1px solid #000;
+		}
+		
+		nav ul li:last-child {
+			border-bottom:none;
+		}
+		
+		nav a:visited,
+		nav a {
+			color: #aaa;
+		}
+		
+		nav ul li a {
+			text-decoration: none;
+			color: eee;
+			font-size: 25px;
+		}
+		
+		nav a:hover {
+			color: #f94;
+			text-decoration: underline;
+		}
+		
+		.main-content {
+			padding: 10px;
+			margin-left: 50px;
+		}
+		.main-content article ul li {
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main-container">
+		<header>
+			<h1><a href="description.html" style="color: white;text-decoration: none;">Dunces & Daggers</a> <mark style="float: right; color: white; font-size: 22px; background-color: orange;margin-right:2px;">Stinky_PandaOE</mark></h1>
+		<header>
+			<nav class="site-menu">
+				<ul>
+					<li><a href="description.html">Home</a></li>
+					<li><a href="posts.html">Posts</a></li>
+					<li><a href="privacy.html">Settings</a></li>
+					<li><a href="works-cited.html">Works Cited</a></li>
+				</ul>
+			</nav>
+		
+			<div class="main-content">
+				<article>
+					<form>
+						<ul class="post-feed">
+							<li><h2>Privacy Settings</h2></li>
+							<li><h3>Posts</h3>
+							<input type="radio" id="post-public" name="post-publicity" value="post-public">
+							<label for="post-public">Public</label>
+							
+							<input type="radio" id="post-friends-only" name="post-publicity" value="post-friends-only" checked="checked">
+							<label for="post-friends-only">Friends only</label>
+							
+							<input type="radio" id="post-private" name="post-publicity" value="post-private">
+							<label for="post-private">Private</label></li>
+							
+							<li><h3>Tag Permission</h3>
+							<input type="radio" id="tag-permission-all" name="tag-permission" value="tag-permission-all">
+							<label for="tag-permission-all">Everyone</label>
+							
+							<input type="radio" id="tag-permission-friends" name="tag-permission" value="tag-permission-friends">
+							<label for="tag-permission-friends">Friends only</label>
+						
+							<input type="radio" id="tag-permission-none" name="tag-permission" value="tag-permission-none" checked="checked">
+							<label for="tag-permission-none">None</label>
+						</ul>
+						<br><input type="submit" onclick="alert('Settings changed.')">
+					</form>
+				</article>
+			</div>
+</body>
+
+</html>
